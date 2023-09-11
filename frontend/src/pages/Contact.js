@@ -1,13 +1,12 @@
 import React from "react";
 import Header from "../components/Header";
-import Items from "../components/Items";
 import Footer from "../components/Footer";
 
-export default function Main() {
+export default function Contact() {
   return (
     <>
-      <Header title={"Your school items here!"} />
-      <Items />
+      <Header title={"Contact us"} display="none" />
+
       <Footer />
     </>
   );
