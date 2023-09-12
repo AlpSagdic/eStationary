@@ -201,11 +201,10 @@ nav {
   text-decoration: none;
   justify-content: center;
   gap: 1.2rem;
-  background-color: orangered;
   width: 100%;
   font-size: 1.8rem;
   padding: 1.2rem 1.8rem;
-  border: 2px solid orangered;
+  border: 2px solid #e67e22;
   border-radius: 9px;
   color: #333;
   transition: all 0.5s;
@@ -217,8 +216,13 @@ nav {
 }
 
 .btn--item:hover {
-  background-color: #fff;
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.buy:hover {
   color: #000;
+  background-color: #fff;
 }
 
 /* FORM */

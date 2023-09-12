@@ -10,7 +10,7 @@ export default function Card(props) {
           <span className="name">{props.class}</span>
         </div>
         <ul className="item-attributes">
-          <li className="item-attribute">{props.discount + " Discount!"}</li>
+          <li className="item-attribute">{"Only " + props.price + "$"}</li>
           <li className="item-attribute">{props.name}</li>
           <Link className="btn--item">
             Add Cart <ion-icon name="add-circle-outline"></ion-icon>

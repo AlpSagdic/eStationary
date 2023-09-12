@@ -12,49 +12,49 @@ export default function Items() {
       <div className="container grid grid--4-cols">
         <Card
           class={"Uçlu Kalem"}
-          discount={"20%"}
+          price={"9"}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
         <Card
           class={"Uçlu Kalem"}
-          discount={"20%"}
+          price={"9.49"}
           name={"Faber Uçlu Kalem"}
           img={Pencil}
         />
         <Card
           class={"Uçlu Kalem"}
-          discount={"20%"}
+          price={"9"}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
         <Card
           class={"Uçlu Kalem"}
-          discount={"20%"}
+          price={"9"}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
         <Card
           class={"Uçlu Kalem"}
-          discount={"20%"}
+          price={"9"}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
         <Card
           class={"Uçlu Kalem"}
-          discount={"20%"}
+          price={"9"}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
         <Card
           class={"Uçlu Kalem"}
-          discount={"20%"}
+          price={"9"}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
         <Card
           class={"Uçlu Kalem"}
-          discount={"20%"}
+          price={"9"}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
