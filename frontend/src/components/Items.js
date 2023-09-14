@@ -11,50 +11,58 @@ export default function Items() {
       </div>
       <div className="container grid grid--4-cols">
         <Card
-          class={"Uçlu Kalem"}
-          price={"9"}
+          id_={1}
+          category={"Uçlu Kalem"}
+          price={9}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
         <Card
-          class={"Uçlu Kalem"}
-          price={"9.49"}
+          id_={2}
+          category={"Uçlu Kalem"}
+          price={9.49}
           name={"Faber Uçlu Kalem"}
           img={Pencil}
         />
         <Card
-          class={"Uçlu Kalem"}
-          price={"9"}
+          id_={3}
+          category={"Uçlu Kalem"}
+          price={9}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
         <Card
-          class={"Uçlu Kalem"}
-          price={"9"}
+          id_={4}
+          category={"Uçlu Kalem"}
+          price={9}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
         <Card
-          class={"Uçlu Kalem"}
-          price={"9"}
+          id_={5}
+          category={"Uçlu Kalem"}
+          price={6.99}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
         <Card
-          class={"Uçlu Kalem"}
-          price={"9"}
+          id_={6}
+          category={"Uçlu Kalem"}
+          price={9}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
         <Card
-          class={"Uçlu Kalem"}
-          price={"9"}
+          id_={7}
+          category={"Uçlu Kalem"}
+          price={9}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
         <Card
-          class={"Uçlu Kalem"}
-          price={"9"}
+          id_={8}
+          category={"Uçlu Kalem"}
+          price={9}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />

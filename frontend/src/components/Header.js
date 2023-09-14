@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
+import { UserContext } from "../UserContext";
 
 export default function Header(props) {
+  const { setUserInfo } = useContext(UserContext);
   const myStyle = {
     display: props.display,
   };
+
+  useEffect(() => {}, [props.name]);
+
+  function logout() {
+    axios
+      .post("http://localhost:4000/logout", {}, { withCredentials: true })
+      .then((res) => {
+        if (res.status === 200) {
+          setUserInfo(null);
+          window.location.href = "/";
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
   return (
     <header>
       <nav className="container main-nav">
@@ -19,19 +38,37 @@ export default function Header(props) {
           </li>
           <li>
             <Link className="main-nav-link" to={"/all"}>
-              All
+              Items
             </Link>
           </li>
-          <li>
-            <Link className="main-nav-link" to={"/login"}>
-              Login
-            </Link>
-          </li>
-          <li>
-            <Link className="main-nav-link nav-warning" to={"/register"}>
-              Register
-            </Link>
-          </li>
+          {props.name && (
+            <>
+              <li>
+                <Link to="/logout" className="main-nav-link" onClick={logout}>
+                  Logout
+                </Link>
+              </li>
+              <li>
+                <Link to={"/cart"} className="main-nav-link nav-warning">
+                  Cart
+                </Link>
+              </li>
+            </>
+          )}
+          {!props.name && (
+            <>
+              <li>
+                <Link className="main-nav-link" to={"/login"}>
+                  Login
+                </Link>
+              </li>
+              <li>
+                <Link className="main-nav-link nav-warning" to={"/register"}>
+                  Register
+                </Link>
+              </li>
+            </>
+          )}
         </ul>
       </nav>
 
