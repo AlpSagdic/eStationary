@@ -13,7 +13,7 @@ export default function Items() {
         <Card
           id_={1}
           category={"Uçlu Kalem"}
-          price={9}
+          price={6.49}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
@@ -27,42 +27,14 @@ export default function Items() {
         <Card
           id_={3}
           category={"Uçlu Kalem"}
-          price={9}
+          price={1.99}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />
         <Card
           id_={4}
           category={"Uçlu Kalem"}
-          price={9}
-          name={"Faber Uçlu Kalem"}
-          img={Pen}
-        />
-        <Card
-          id_={5}
-          category={"Uçlu Kalem"}
           price={6.99}
-          name={"Faber Uçlu Kalem"}
-          img={Pen}
-        />
-        <Card
-          id_={6}
-          category={"Uçlu Kalem"}
-          price={9}
-          name={"Faber Uçlu Kalem"}
-          img={Pen}
-        />
-        <Card
-          id_={7}
-          category={"Uçlu Kalem"}
-          price={9}
-          name={"Faber Uçlu Kalem"}
-          img={Pen}
-        />
-        <Card
-          id_={8}
-          category={"Uçlu Kalem"}
-          price={9}
           name={"Faber Uçlu Kalem"}
           img={Pen}
         />

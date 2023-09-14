@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../ShopContext";
 import { CartItem } from "../components/CartItem";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Cart() {
   const { cartItems } = useContext(ShopContext);
@@ -8,15 +10,27 @@ export default function Cart() {
   const cartItemsList = Object.entries(cartItems)
     .filter(([itemId, quantity]) => quantity > 0)
     .map(([itemId, quantity]) => (
-      <CartItem key={itemId} itemId={itemId} quantity={quantity} />
+      <CartItem
+        id_={itemId}
+        quantity={quantity}
+        category={"Pencil"}
+        price={cartItems.price}
+        name={cartItems.name}
+      />
     ));
 
   return (
-    <div className="cart">
-      <div>
-        <h1>Your Cart Items</h1>
+    <>
+      <Header />
+      <div className="container">
+        <div className="cart">
+          <div>
+            <h1 className="cart-title">Your Cart Items</h1>
+          </div>
+          <div className="container grid grid--3-cols">{cartItemsList}</div>
+        </div>
       </div>
-      <div>{cartItemsList}</div>
-    </div>
+      <Footer />
+    </>
   );
 }

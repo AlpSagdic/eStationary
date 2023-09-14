@@ -32,9 +32,9 @@ export default function Header(props) {
         </Link>
         <ul className="main-nav-list">
           <li>
-            <Link to={"/contact"} className="main-nav-link">
+            <a href="mailto:contact@reaktech.com" className="main-nav-link">
               Contact
-            </Link>
+            </a>
           </li>
           <li>
             <Link className="main-nav-link" to={"/all"}>
