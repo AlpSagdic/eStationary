@@ -19,7 +19,7 @@ export default function Card(props) {
             Add Cart<ion-icon name="add-circle-outline"></ion-icon>
             {cartItemAmount > 0 && <span>{"(" + cartItemAmount + ")"}</span>}
           </Link>
-          <Link className="btn--item buy">
+          <Link className="btn--item buy" to={"/checkout"}>
             Buy <ion-icon name="cart-outline"></ion-icon>
           </Link>
         </ul>

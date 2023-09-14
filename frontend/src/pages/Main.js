@@ -9,7 +9,13 @@ export default function Main() {
   const name = userInfo?.name;
   return (
     <>
-      <Header title={"Your school items here!"} name={name} />
+      <Header
+        title={"Your school items here!"}
+        name={name}
+        content={
+          "You can find all your school, office and business needs here. Happy shopping!"
+        }
+      />
       <Items />
       <Footer />
     </>

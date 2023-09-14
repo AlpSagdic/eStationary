@@ -44,7 +44,13 @@ export default function Login() {
 
   return (
     <>
-      <Header title={"Login"} display="none" />
+      <Header
+        title={"Resume Journey Here!"}
+        display="none"
+        content={
+          "If you haven't registered yet, sign up now to benefit from the discounts! If you are registered, scroll down and log in to your account."
+        }
+      />
       <section className="section-form">
         <div className="container">
           <div className="form">

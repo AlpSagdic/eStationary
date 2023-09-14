@@ -21,7 +21,13 @@ export default function Cart() {
 
   return (
     <>
-      <Header />
+      <Header
+        title={"Your Cart"}
+        display={"none"}
+        content={
+          "Scroll down to examine the products in your cart and get what you want now!"
+        }
+      />
       <div className="container">
         <div className="cart">
           <div>

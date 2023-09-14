@@ -44,7 +44,13 @@ export default function Register() {
 
   return (
     <>
-      <Header title={"Start journey here!"} display="none" />
+      <Header
+        title={"Start journey here!"}
+        display="none"
+        content={
+          "Why do we want you to register? Because when you register, you can access your cart and campaigns much more easily. Sign up now by scrolling down!"
+        }
+      />
       <section className="section-form">
         <div className="container">
           <div className="form">
